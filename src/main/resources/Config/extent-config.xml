@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme -->
+		<!-- standard, dark -->
+		<!-- .suite-started-time { padding-top:1px;}.suite-started-time > img {float: left;height:0%;margin-left:0px;margin-top:0px;width:auto; } -->
+		<!--  $('.suite-started-time').html('<img src="D:/Images/Txlogo1.png"  hspace="-45" height="55" width="55"/>'); -->
+		<theme>dark</theme>
+
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+
+		<!-- title of the document -->
+		<documentTitle>TX Automate</documentTitle>
+
+		<!-- report name - displayed at top-nav -->
+		<reportName>Test Automation Report</reportName>
+
+		<!-- report headline - displayed at top-nav, after reportHeadline -->
+		<reportHeadline>-- Developed by TestingXperts </reportHeadline>
+
+		<!-- global date format override -->
+		<!-- defaults to yyyy-MM-dd -->
+		<dateFormat>yyyy-MM-dd</dateFormat>
+
+		<!-- global time format override -->
+		<!-- defaults to HH:mm:ss -->
+		<timeFormat>HH:mm:ss</timeFormat>
+
+		<!-- custom javascript -->
+		<scripts>
+      <![CDATA[
+        $(document).ready(function() {
+        $('.logo-container.blue.darken-2').html('TestingXperts');
+        $('.mdi-hardware-desktop-windows').html('<img src="D:/Images/Txlogo1.png"  hspace="-45" height="55" width="55"/>');
+        });
+      ]]>
+		</scripts>
+
+		<!-- custom styles -->
+		<styles>
+      <![CDATA[
+      
+     .mdi-hardware-desktop-windows { padding-top:1px;}.mdi-hardware-desktop-windows > img {float: left;height:0%;margin-left:0px;margin-top:0px;width:auto; }
+        
+      ]]>
+		</styles>
+	</configuration>
+</extentreports>
